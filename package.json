@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "setup": "bash scripts/setup.sh",
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc && vite build",
     "preview": "vite preview",
     "server": "tsx server/index.ts",
     "mcp": "tsx mcp-server/index.ts",
@@ -34,7 +34,7 @@
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sonner": "^2.0.7"
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -57,4 +57,3 @@
     ]
   }
 }
-
